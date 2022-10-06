@@ -88,12 +88,12 @@ body.light {
     margin-top: 1rem;
     font-size: 1rem;
     color: var(--text-black-700);
-    text-transform: capitalize;
+    text-transform: none;
 }
 
 .song-details .artist {
     color: var(--text-black-900);
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 0.8rem;
 }
 
