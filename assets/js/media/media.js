@@ -11,7 +11,7 @@ const wrapper = document.querySelector(".wrapper"),
       musicList = wrapper.querySelector(".music-list"),
       moreMusicBtn = wrapper.querySelector("#more-music"),
       closemoreMusic = musicList.querySelector("#close");
-
+      
 let allMusic = [
     {
         name: "HBD BRO!",
@@ -26,8 +26,8 @@ let allMusic = [
         src: "music-2"
     },
     {
-        name: "☧✡⚕†",
-        artist: "Ardentix",
+        name: "Title Not Related",
+        artist: "trippythakid",
         img: "music-3",
         src: "music-3"
     }

@@ -44,9 +44,17 @@
 }
 
 .cog .cog-toggler {
-    top: 0;
+    top: 0px;
 }
 
 .cog .day-night {
     top: 55px;
+}
+
+.cog h4 {
+    margin: 0 0 10px;
+    color: var(--text-black-700);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
 }

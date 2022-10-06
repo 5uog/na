@@ -1,6 +1,6 @@
 /* toggle cog */
-const styleSwitcherToggle = document.querySelector(".cog-toggler")
-styleSwitcherToggle.addEventListener("click", () => {
+const styleMusicPlayer = document.querySelector(".cog-toggler")
+styleMusicPlayer.addEventListener("click", () => {
     document.querySelector(".cog").classList.toggle("open")
 });
 
