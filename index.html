@@ -1,0 +1,97 @@
+<!-- for not to switch into quirks mode -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/img/icon.png" type="image/x-icon">
+        <title>na</title>
+
+        <!-- remixicons + boxicons + unicons + lineicons + fontawesome + flaticons + material icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+        <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- import css -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/preloader.css">
+        <link rel="stylesheet" href="./assets/css/cog.css">
+    </head>
+
+    <body>
+        <!-- preloader -->
+        <div class="preloader">
+            <div class="loader">
+            </div>
+        </div>
+
+        <!-- cog (wrapper) -->
+        <div class="cog">
+            <div class="cog-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+
+            <div class="day-night s-icon">
+                <i class="bx "></i>
+            </div>
+
+            <!-- audio -->
+            <div class="wrapper">
+                <div class="top-bar">
+                    <span>Now Playing</span>
+                </div>
+                
+                <div class="img-area-wrapper">
+                    <div class="img-area">
+                        <img src="" alt="">
+                    </div>
+                </div>
+                
+                <div class="song-details">
+                    <p class="name"></p>
+                    <p class="artist"></p>
+                </div>
+    
+                <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio id="main-audio" src=""></audio>
+                    </div>
+                    <div class="song-timer">
+                        <span class="current-time">0:00</span>
+                        <span class="max-duration">0:00</span>
+                    </div>
+                </div>
+    
+                <div class="controls">
+                    <i id="repeat-plist" class="material-icons" title="Playlist looped">repeat</i>
+                    <i id="prev" class="material-icons">skip_previous</i>
+                    <div class="play-pause"><i class="material-icons play">play_arrow</i></div>
+                    <i id="next" class="material-icons">skip_next</i>
+                    <i id="more-music" class="material-icons">queue_music</i>
+                </div>
+                
+                <div class="music-list">
+                    <div class="header">
+                        <i id="close" class="material-icons">close</i>
+                    </div>
+                    <ul></ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- import js -->
+        <script src="https://unpkg.com/wavesurfer.js"></script>
+        <script src="./assets/js/media/gsap.min.js"></script>
+        <script src="./assets/js/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/js/typed.js/typed.min.js"></script>
+
+        <script src="./assets/js/cog.js"></script>
+        <script src="./assets/js/preloader/preloader.js"></script>
+        <script src="./assets/js/media/media.js"></script>
+    </body>
+</html>
