@@ -53,17 +53,15 @@
     padding: 0;
     margin: 0;
     font-family: var(--body-font);
-    transition: all 0.35s;
+    transition: all .35s;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-body,
-button,
-input,
-textarea {
+body, button,
+input, textarea {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
@@ -148,16 +146,18 @@ body.light {
 
 .home-container {
     position: relative;
+    text-align: center;
     row-gap: 4.5rem;
     padding-top: 2rem;
 }
 
 .intro {
     max-width: 540px;
-    text-align: center;
-}
-
-.home-data {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
 }
 
@@ -182,7 +182,7 @@ body.light {
 }
 
 .home-social li:not(:last-child) {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
 }
 
 .home-social a {
@@ -200,14 +200,14 @@ body.light {
 }
 
 .social-link:hover {
-    color: var(--main-color-alt);
+    color: var(--main-color);
 }
 
 .home-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 /*===== buttons =====*/
@@ -219,11 +219,16 @@ body.light {
     padding: .75rem 1rem;
     border-radius: .5rem;
     font-weight: var(--font-medium);
-    transition: .4s;
 }
 
 .button:hover {
     color: var(--main-color);
+    /*
+    animation-name: button-push;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    */
 }
 
 .button--ghost {
@@ -237,9 +242,15 @@ body.light {
 
 .button--ghost:hover {
     color: var(--main-color);
-    border: 2px solid var(--main-color-alt);
+    border: 1px solid var(--main-color-alt);
+    /*
+    animation-name: button-push;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    */
 }
-  
+
 /*===== footer =====*/
 .footer__c {
     display: block;

@@ -1,5 +1,6 @@
 <!-- 2 not to switch into quirks mode -->
 <!-- + not to garbled ascii characters -->
+<!-- 'jp' only for ./assets/css/cog/media.css -->
 <!DOCTYPE html>
 <html lang="jp">
     <head>
@@ -20,7 +21,8 @@
 
         <!-- import css -->
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/preloader.css">
+        <link rel="stylesheet" href="./assets/css/config.css">
+        <link rel="stylesheet" href="./assets/css/preloader/preloader.css">
         <link rel="stylesheet" href="./assets/css/cog/cog.css">
         <link rel="stylesheet" href="./assets/css/cog/media.css">
     </head>
@@ -38,6 +40,7 @@
                 <div class="container">
                     <div class="intro">
                         <!-- info -->
+
                         <h1 class="home-name">prod. wiihy</h1>
                         <h3 class="home-education">VFX, GFX & SFX artist</h3>
 
@@ -68,6 +71,11 @@
                                 </a>
                             </li>
                         </ul>
+
+                        <div class="home-buttons">
+                            <a href="https://drive.google.com/drive/folders/1Nz4FlT9EGY6ygKWVQh-q_Z_sv1HKqwn3" target="_blank" class="button button--ghost">Download</a>
+                            <a href="#projects" class="button">Recent Projects</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -133,10 +141,10 @@
         <script src="https://unpkg.com/wavesurfer.js"></script>
         <script src="./assets/js/swiper/swiper-bundle.min.js"></script>
         <script src="./assets/js/typed.js/typed.min.js"></script>
-        <script src="./assets/js/media/gsap.min.js"></script>
+        <script src="./assets/js/cog/media/gsap.min.js"></script>
 
         <script src="./assets/js/cog/cog.js"></script>
         <script src="./assets/js/preloader/preloader.js"></script>
-        <script src="./assets/js/media/media.js"></script>
+        <script src="./assets/js/cog/media/media.js"></script>
     </body>
 </html>
