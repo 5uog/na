@@ -146,18 +146,12 @@ body.light {
 
 .home-container {
     position: relative;
-    text-align: center;
     row-gap: 4.5rem;
     padding-top: 2rem;
 }
 
 .intro {
     max-width: 540px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
     text-align: center;
 }
 
