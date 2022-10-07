@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Jost:wght@400;500;600&display=swap');
+
+:root {
+    /*===== colors =====*/
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --pl-border: #3c3c3c;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+
+    --main-color: #ff6666;
+    --main-color-alt: #f55250;
+  
+    /*===== font and typography =====*/
+    /* .5rem = 8px | 1rem = 16px */
+    --body-font: 'Jost', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --tiny-font-size: .625rem;
+  
+    /*===== font weight =====*/
+    --font-medium: 500;
+    --font-semibold: 600;
+  
+    /*===== z index =====*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+  
+/* responsive typography */
+@media screen and (min-width: 968px) {
+    :root {
+        --biggest-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .925rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*===== base =====*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--body-font);
+    transition: all 0.35s;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: var(--body-font);
+    background: var(--bg-black-900);
+}
+
+body.light {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --pl-border: #E5E5E5;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+
+/* reusable css classes */
+.container {
+    max-width: 968px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+  
+.main-content {
+    overflow: hidden;
+}
+  
+.section {
+    padding: 4.5rem 0 1rem;
+}
+  
+.section__title, 
+.section__subtitle {
+    text-align: center;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: var(--smaller-font-size);
+    color: var(--text-black-700);
+}
+
+/*===== home =====*/
+.home {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.home-container {
+    position: relative;
+    row-gap: 4.5rem;
+    padding-top: 2rem;
+}
+
+.intro {
+    max-width: 540px;
+    text-align: center;
+}
+
+.home-data {
+    text-align: center;
+}
+
+.home-name {
+    color: var(--text-black-900);
+    font-size: var(--biggest-font-size);
+}
+
+.home-education {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-black-700);
+    margin-bottom: 2.5rem;
+}
+
+.home-social {
+    margin-bottom: 1.5rem;
+}
+
+.home-social li {
+    display: inline-block;
+}
+
+.home-social li:not(:last-child) {
+    margin-right: 1.5rem;
+}
+
+.home-social a {
+    font-size: var(--h3-font-size);
+}
+
+.social-link {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    border-radius: 25%;
+    padding: .25rem;
+    display: flex;
+    font-size: 1rem;
+}
+
+.social-link:hover {
+    color: var(--main-color-alt);
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/*===== buttons =====*/
+.button {
+    display: inline-block;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    color: var(--text-black-700);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .4s;
+}
+
+.button:hover {
+    color: var(--main-color);
+}
+
+.button--ghost {
+    background-color: transparent;
+    border: 1px solid var(--text-black-700);
+    color: var(--text-black-900);
+}
+
+.button--ghost:hover {
+    border: 2px solid var(--main-color-alt);
+}
+  
+/*===== footer =====*/
+.footer__c {
+    display: block;
+    margin: 2.5rem 0 2rem;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: var(--smaller-font-size);
+    color: var(--text-black-900);
+}
+
+/*===== breakpoints =====*/
+/* for small devices */
+@media screen and (max-width: 320px) {
+    .home-buttons {
+        flex-direction: column;
+    }
+}
+  
+/* for medium devices */
+@media screen and (min-width: 576px) {
+
+}
+  
+@media screen and (min-width: 767px) {
+
+}
+  
+/* for large devices */
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        padding: 6.5rem 0 1rem;
+    }
+
+    .section-title {
+        margin-bottom: 3.5rem;
+    }
+
+    .home-social-link {
+        padding: .4rem;
+        font-size: 1.25rem;
+    }
+}
