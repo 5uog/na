@@ -190,7 +190,6 @@ for (let i = 0; i < allMusic.length; i++) {
     let liTag = `<li li-index="${i + 1}">
     <div class="row">
     <span>${allMusic[i].name}</span>
-    <p>${allMusic[i].artist}</p>
     </div>
     <span id="${allMusic[i].src}" class="audio-duration">3:40</span>
     <audio class="${allMusic[i].src}" src="./assets/audio/${allMusic[i].src}.mp3"></audio>
@@ -237,8 +236,8 @@ function clicked(element) {
     playingSong();
 }
 
-// reveal animations
-gsap.from("cog, h1, .img-area, .song-details, #repeat-plist, #prev, .play-pause, #next, #more-music", {
+// reveal animations when laoded (only when the site was laoded.)
+gsap.from("cog, .song-details, #repeat-plist, #prev, .play-pause, #next, #more-music", {
     opacity: 0,
     duration: 2,
     delay: 0.5,
