@@ -26,10 +26,28 @@ let allMusic = [
         src: "music-2"
     },
     {
-        name: "Title Not Related",
-        artist: "trippythakid",
-        img: "music-3",
-        src: "music-3"
+        name: "It G Ma",
+        artist: "Keith Ape",
+        img: "music-4",
+        src: "music-4"
+    },
+    {
+        name: "FULL OF IT",
+        artist: "NECROEZ",
+        img: "music-5",
+        src: "music-5"
+    },
+    {
+        name: "over the dirty world",
+        artist: "leino",
+        img: "music-6",
+        src: "music-6"
+    },
+    {
+        name: "私は死にたい",
+        artist: "Honja",
+        img: "music-7",
+        src: "music-7"
     }
 ];
 
