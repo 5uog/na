@@ -1,4 +1,4 @@
-// popup tab
+/*===== popup tab =====*/
 $(function (){
     $('.popup-video').magnificPopup({
         type: 'iframe',

@@ -132,7 +132,7 @@ body.light {
 
 .section-title {
     font-size: var(--h2-font-size);
-    color: var(--main-color);
+    color: var(--text-black-900);
     margin-bottom: 2rem;
 }
 

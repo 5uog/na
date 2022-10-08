@@ -1,4 +1,4 @@
-// according skills
+/*===== according skills =====*/
 const skillsContent = document.getElementsByClassName('skills-content'),
       skillsHeader = document.querySelectorAll('.skills-header');
 

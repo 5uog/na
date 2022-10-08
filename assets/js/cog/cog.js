@@ -1,4 +1,4 @@
-/* toggle cog */
+/*===== toggle cog =====*/
 const styleMusicPlayer = document.querySelector(".cog-toggler")
 styleMusicPlayer.addEventListener("click", () => {
     document.querySelector(".cog").classList.toggle("open")
@@ -11,7 +11,7 @@ window.addEventListener("scroll", () => {
     }
 });
 
-/* theme light and dark mode */
+/*===== theme light and dark mode =====*/
 const dayNight = document.querySelector(".day-night")
 dayNight.addEventListener("click", () => {
     dayNight.querySelector("i").classList.toggle("bxs-sun")
