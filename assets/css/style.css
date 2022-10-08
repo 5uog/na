@@ -27,7 +27,14 @@
     /*===== font weight =====*/
     --font-medium: 500;
     --font-semibold: 600;
-  
+
+    /*===== margins =====*/
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+
     /*===== z index =====*/
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -59,8 +66,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body, button,
-input, textarea {
+body, button, input, textarea {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
