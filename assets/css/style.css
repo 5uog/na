@@ -471,20 +471,19 @@ body.light {
 /*===== scroll up =====*/
 .scrollup {
     position: fixed;
-    background-color: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    color: var(--text-black-900);
+    display: inline-flex;
     right: 1rem;
     bottom: -20%;
-    display: inline-flex;
     padding: .3rem;
-    border-radius: 0.25rem;
+    border-radius: .25rem;
+    border: 1px solid var(--bg-black-50);
+    background-color: var(--bg-black-100);
     z-index: var(--z-tooltip);
     opacity: 1;
     transition: .4s;
 }
 
-.scrollup__icon {
+.scroll-icon {
     font-size: 1.25rem;
     color: var(--text-black-900);
 }
