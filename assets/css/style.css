@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Jost:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
 
 :root {
     /*===== colors =====*/
@@ -136,6 +135,57 @@ body.light {
     color: var(--text-black-700);
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+/*===== buttons =====*/
+.button {
+    display: inline-block;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    color: var(--text-black-700);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+.button:hover {
+    color: var(--main-color);
+    /*
+    animation-name: button-push;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    */
+}
+
+.button--ghost {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--text-black-700);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    color: var(--text-black-900);
+}
+
+.button--ghost:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color-alt);
+    /*
+    animation-name: button-push;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    */
+}
+
 /*===== home =====*/
 .home {
     display: flex;
@@ -147,7 +197,7 @@ body.light {
 .home-container {
     position: relative;
     row-gap: 4.5rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem */
 }
 
 .intro {
@@ -197,52 +247,75 @@ body.light {
     color: var(--main-color);
 }
 
-.home-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.scroll-down {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
 }
 
-/*===== buttons =====*/
-.button {
-    display: inline-block;
-    background-color: var(--bg-black-100);
-    border: 1px solid var(--bg-black-50);
-    color: var(--text-black-700);
-    padding: .75rem 1rem;
-    border-radius: .5rem;
-    font-weight: var(--font-medium);
+.mouse-wrapper {
+    font-size: var(--small-font-size);
+    display: block;
+    margin: auto;
+    max-width: 100px;
+    text-align: center;
 }
 
-.button:hover {
-    color: var(--main-color);
-    /*
-    animation-name: button-push;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    */
-}
-
-.button--ghost {
-    display: inline-block;
-    background-color: transparent;
-    border: 1px solid var(--text-black-700);
-    padding: .75rem 1rem;
-    border-radius: .5rem;
+.mouse-wrapper span {
     color: var(--text-black-900);
 }
 
-.button--ghost:hover {
-    color: var(--main-color);
-    border: 1px solid var(--main-color-alt);
-    /*
-    animation-name: button-push;
-    animation-duration: 0.3s;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    */
+.mouse {
+    border: 2px solid var(--text-black-900);
+    display: block;
+    height: 1.75rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 45%;
+    position: relative;
+}
+
+.wheel {
+    background-color: var(--text-black-900);
+    border-radius: 50%;
+    width: .25rem;
+    height: .25rem;
+    position: absolute;
+    top: .5rem;
+    left: 40%;
+    display: block;
+    animation: mouse 2s linear infinite;
+}
+
+/*===== scroll up =====*/
+.scrollup {
+    position: fixed;
+    background: var(--first-color);
+    right: 1rem;
+    bottom: -20%;
+    display: inline-flex;
+    padding: 0.3rem;
+    border-radius: 0.25rem;
+    z-index: var(--z-tooltip);
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.scrollup:hover {
+    background-color: var(--first-color);
+    opacity: 1;
+}
+
+.scrollup__icon {
+    font-size: 1.25rem;
+    color: var(--title-color);
+}
+  
+/* show scroll up */
+.show-scroll {
+    bottom: 3rem;
 }
 
 /*===== footer =====*/
@@ -265,11 +338,15 @@ body.light {
   
 /* for medium devices */
 @media screen and (min-width: 576px) {
-
+    .footer__c {
+        margin: 4.5rem 0 2.5rem;
+    }
 }
   
 @media screen and (min-width: 767px) {
-
+    .footer__c {
+        margin: 4.5rem 0 2.5rem;
+    }
 }
   
 /* for large devices */
@@ -290,5 +367,15 @@ body.light {
     .home-social-link {
         padding: .4rem;
         font-size: 1.25rem;
+    }
+
+    .footer__c {
+        margin: 4.5rem 0 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .scrollup {
+        right: 2rem;
     }
 }

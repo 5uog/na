@@ -1,9 +1,25 @@
-/* animations (not in use) */
+/* button-push (not in use) */
 @keyframes button-push {
     50% {
         transform: scale(0.6);
     }
     100% {
         transform: scale(1);
+    }
+}
+
+/* scroll down mouse wheel */
+@keyframes mouse {
+    0% {
+        top: 29%;
+    }
+    15% {
+        top: 50%;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 29%;
     }
 }

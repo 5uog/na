@@ -44,9 +44,11 @@
     line-height: 40px;
 }
 
+/*
 .cog .s-icon i:hover {
     color: var(--main-color);
 }
+*/
 
 .cog .cog-toggler {
     top: 0px;
