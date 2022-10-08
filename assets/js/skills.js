@@ -1,4 +1,4 @@
-/*===== according skills =====*/
+/*===== accordion skills =====*/
 const skillsContent = document.getElementsByClassName('skills-content'),
       skillsHeader = document.querySelectorAll('.skills-header');
 

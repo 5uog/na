@@ -296,7 +296,7 @@ body.light {
     animation: mouse 2s linear infinite;
 }
 
-/*===== skills =====*/
+/*===== about (skills) =====*/
 .skills-container {
     padding-right: 4rem;
     padding-left: 4rem;
@@ -387,7 +387,11 @@ body.light {
     width: 5%;
 }
 
-.skills-html, .skills-motion, .skills-valorant {
+.skills-mc {
+    width: 15%;
+}
+
+.skills-html, .skills-motion, .skills-valorant, .skills-gentou {
     width: 25%;
 }
 
@@ -415,11 +419,11 @@ body.light {
     width: 65%;
 }
 
-.skills-cpp, .skills-ae {
+.skills-cpp, .skills-ae, .skills-iv {
     width: 75%;
 }
 
-.skills-mc {
+.skills-mcpe {
     width: 85%;
 }
 
@@ -433,6 +437,34 @@ body.light {
 
 .skills-number {
     font-size: var(--small-font-size);
+}
+
+/*===== projects =====*/
+.projects__grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.projects__grid .thumbnail{
+    height: 250px;
+    width: 350px;
+    border-radius: .5rem;
+    box-shadow: 0 8px 24px var(--popup-box-shadow);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.projects__grid .thumbnail img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+.projects__grid .thumbnail:hover img{
+    transform: scale(1.1);
 }
 
 /*===== scroll up =====*/
@@ -478,20 +510,17 @@ body.light {
         flex-direction: column;
     }
 
-    .about-info {
-        grid-template-columns: repeat(2, 1fr);
+    .projects__content{
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }
   
 /* for medium devices */
 @media screen and (min-width: 576px) {
-    .about-info {
-        grid-template-columns: repeat(3, 140px);
+    .projects__content{
         justify-content: center;
-    }
-
-    .about-description {
-        padding: 0 5rem;
     }
 
     .footer__c {
@@ -500,6 +529,10 @@ body.light {
 }
   
 @media screen and (min-width: 767px) {
+    .projects__content{
+        grid-template-columns: repeat(2, 332px);
+    }
+
     .footer__c {
         margin: 4.5rem 0 2.5rem;
     }
@@ -525,32 +558,8 @@ body.light {
         font-size: 1.25rem;
     }
 
-    .about-container {
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        column-gap: 4rem;
-    }
-
-    .about-img {
-        width: 350px;
-    }
-
-    .about-data {
-        text-align: initial;
-    }
-
-    .about-info {
-        justify-content: initial;
-    }
-
-    .about-box {
-        text-align: center;
-        padding: 1rem 1.25rem;
-    }
-
-    .about-description {
-        padding: 0 4rem 0 0;
-        margin-bottom: 2.5rem;
+    .projects__content{
+        gap: 2rem 2.6rem;
     }
 
     .footer__c {
