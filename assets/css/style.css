@@ -440,7 +440,13 @@ body.light {
 }
 
 /*===== projects =====*/
-.projects__grid{
+.projects-content {
+    padding-left: auto;
+    padding-right: auto;
+    row-gap: 0;
+}
+
+.projects-grid{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -448,23 +454,22 @@ body.light {
     padding: 10px;
 }
 
-.projects__grid .thumbnail{
+.projects-grid .thumbnail{
     height: 250px;
     width: 350px;
     border-radius: .5rem;
-    box-shadow: 0 8px 24px var(--bg-black-50);
     border: 2px solid var(--bg-black-50);
     cursor: pointer;
     overflow: hidden;
 }
 
-.projects__grid .thumbnail img{
+.projects-grid .thumbnail img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
 }
-.projects__grid .thumbnail:hover img{
+.projects-grid .thumbnail:hover img{
     transform: scale(1.1);
 }
 
@@ -510,7 +515,7 @@ body.light {
         flex-direction: column;
     }
 
-    .projects__content{
+    .projects-content {
         justify-content: center;
         padding-left: 1rem;
         padding-right: 1rem;
@@ -524,7 +529,7 @@ body.light {
         padding-right: 4rem;
     }
     
-    .projects__content{
+    .projects-content{
         justify-content: center;
     }
 
@@ -534,7 +539,7 @@ body.light {
 }
   
 @media screen and (min-width: 767px) {
-    .projects__content{
+    .projects-content{
         grid-template-columns: repeat(2, 332px);
     }
 
@@ -563,7 +568,7 @@ body.light {
         font-size: 1.25rem;
     }
 
-    .projects__content{
+    .projects-content{
         gap: 2rem 2.6rem;
     }
 
