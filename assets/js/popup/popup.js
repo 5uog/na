@@ -1,6 +1,6 @@
 /*===== popup tab =====*/
 $(function (){
-    $('.popup-video').magnificPopup({
+    $('.popup-youtube').magnificPopup({
         type: 'iframe',
         removalDelay: 200,
     });

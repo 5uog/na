@@ -3,9 +3,11 @@
     opacity: 0;
     transition: opacity 1s;
 }
+
 .mfp-bg.mfp-ready{
     opacity: 0.8;
 }
+
 .mfp-bg.mfp-removing{
     opacity: 0;
 }
@@ -14,9 +16,11 @@
     opacity: 0;
     transition: opacity 1s;
 }
+
 .mfp-wrap.mfp-ready .mfp-content{
     opacity: 1;
 }
+
 .mfp-wrap.mfp-removing .mfp-content{
     opacity: 0;
 }
