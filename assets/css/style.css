@@ -240,6 +240,10 @@ body.light {
     font-size: var(--h3-font-size);
 }
 
+.home-social a i {
+    color: var(--text-black-900);
+}
+
 .social-link {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
@@ -356,8 +360,13 @@ body.light {
 }
 
 .skills-name {
+    color: var(--text-black-900);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
+}
+
+.skills-number {
+    color: var(--text-black-700);
 }
 
 .skills-bar {
