@@ -168,6 +168,7 @@
     padding: 14px;
     border-radius: 15px;
     overflow: hidden;
+    transition: none;
 }
 
 .music-list.show {
