@@ -453,7 +453,7 @@ body.light {
     width: 350px;
     border-radius: .5rem;
     box-shadow: 0 8px 24px var(--bg-black-50);
-    border: 1px solid var(--bg-black-50);
+    border: 2px solid var(--bg-black-50);
     cursor: pointer;
     overflow: hidden;
 }
@@ -486,7 +486,7 @@ body.light {
 
 .scrollup__icon {
     font-size: 1.25rem;
-    color: var(--title-color);
+    color: var(--text-black-900);
 }
   
 /* show scroll up */
