@@ -520,6 +520,11 @@ body.light {
   
 /* for medium devices */
 @media screen and (min-width: 576px) {
+    .skills-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
     .projects__content{
         justify-content: center;
     }
