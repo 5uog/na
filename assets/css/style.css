@@ -298,8 +298,8 @@ body.light {
 
 /*===== about (skills) =====*/
 .skills-container {
-    padding-right: 4rem;
-    padding-left: 4rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     row-gap: 0;
 }
 
