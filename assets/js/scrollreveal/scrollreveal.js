@@ -6,7 +6,7 @@ const sr = ScrollReveal({
     delay: 400,
 })
 
-sr.reveal(`.home-name`)
-sr.reveal(`.home-education`, {delay: 500})
-sr.reveal(`.home-social`, {interval: 100, delay: 600})
-sr.reveal(`.scroll-down`, {delay: 700})
+sr.reveal(`.home-name`, {delay: 500})
+sr.reveal(`.home-education`, {delay: 600})
+sr.reveal(`.home-social`, {interval: 100, delay: 700})
+sr.reveal(`.scroll-down`, {delay: 800})
