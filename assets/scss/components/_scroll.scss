@@ -1,0 +1,24 @@
+/*===== scroll up =====*/
+.scrollup {
+    position: fixed;
+    display: inline-flex;
+    right: 1rem;
+    bottom: -20%;
+    padding: .3rem;
+    border-radius: .25rem;
+    border: 1px solid var(--bg-black-50);
+    background-color: var(--bg-black-100);
+    z-index: var(--z-tooltip);
+    opacity: 1;
+    transition: .4s;
+    
+    &-icon {
+        font-size: 1.25rem;
+        color: var(--text-black-900);
+    }
+}
+
+/* show scroll up */
+.show-scroll {
+    bottom: 3rem;
+}

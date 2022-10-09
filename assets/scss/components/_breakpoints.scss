@@ -1,0 +1,131 @@
+/*===== breakpoints =====*/
+/* for small devices */
+@media screen and (max-width: 320px) {
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .clans-img {
+        width: 200px;
+        justify-self: center;
+    }
+
+    .projects-content {
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+  
+/* for medium devices */
+@media screen and (min-width: 576px) {
+    .skills-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    
+    .clans {
+        &-container {
+            width: 400px;
+            overflow: hidden;
+
+            & .swiper-button-prev {
+                left: 1rem;
+            }
+
+            & .swiper-button-next {
+                right: 1rem;
+            }
+        }
+    }
+    
+    .projects-content{
+        justify-content: center;
+    }
+
+    .footer__c {
+        margin: 4.5rem 0 2.5rem;
+    }
+}
+  
+@media screen and (min-width: 767px) {
+    .grid-projects {
+        display: grid;
+        gap: 1.25rem;
+    }
+
+    .clans-container {
+        width: 500px;
+    }
+
+    .projects-content{
+        grid-template-columns: repeat(2, 332px);
+    }
+
+    .footer__c {
+        margin: 4.5rem 0 2.5rem;
+    }
+}
+  
+/* for large devices */
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        padding: 6.5rem 0 1rem;
+
+        &-title {
+            margin-bottom: 3.5rem;
+        }
+    }
+
+    .home-social-link {
+        padding: .4rem;
+        font-size: 1.25rem;
+    }
+
+    .projects-content{
+        gap: 2rem 2.6rem;
+    }
+
+    .footer__c {
+        margin: 4.5rem 0 2.5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .clans {
+        &-container {
+            width: 900px;
+
+            & .swiper-button-prev,
+            & .swiper-button-next {
+                font-size: 3rem;
+            }
+            
+            & .swiper-button-prev {
+                left: -1rem;
+            }
+            
+            & .swiper-button-next {
+                right: -1rem;
+            }
+            
+            & .swiper-slide {
+                margin-bottom: 6.5rem;
+            }
+        }
+
+        &-img {
+            width: 320px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .scrollup {
+        right: 2rem;
+    }
+}

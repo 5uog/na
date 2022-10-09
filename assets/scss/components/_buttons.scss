@@ -1,0 +1,40 @@
+/*===== buttons =====*/
+.button {
+    display: inline-block;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    color: var(--text-black-700);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+
+    &:hover {
+        color: var(--main-color);
+        /*
+        animation-name: button-push;
+        animation-duration: 0.3s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        */
+    }
+
+    &--ghost {
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid var(--text-black-700);
+        padding: .75rem 1rem;
+        border-radius: .5rem;
+        color: var(--text-black-900);
+
+        &:hover {
+            color: var(--main-color);
+            border: 1px solid var(--main-color-alt);
+            /*
+            animation-name: button-push;
+            animation-duration: 0.3s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            */
+        }
+    }
+}

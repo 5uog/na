@@ -1,0 +1,36 @@
+/*===== projects =====*/
+.projects {
+    &-content {
+        padding-left: auto;
+        padding-right: auto;
+        row-gap: 0;
+    }
+
+    &-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 10px;
+
+        & .thumbnail {
+            height: 250px;
+            width: 350px;
+            border-radius: .5rem;
+            border: 2px solid var(--bg-black-50);
+            cursor: pointer;
+            overflow: hidden;
+
+            & img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: .2s linear;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

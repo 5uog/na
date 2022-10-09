@@ -1,0 +1,54 @@
+/* reusable css classes, layout */
+.container {
+    max-width: 768px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+.main-content {
+    overflow: hidden;
+}
+  
+.section {
+    padding: 4.5rem 0 1rem;
+
+    &-title, &-subtitle {
+        text-align: center;
+    }
+
+    &-title {
+        font-size: var(--h2-font-size);
+        color: var(--text-black-900);
+        margin-bottom: 2rem;
+    }
+
+    &-subtitle {
+        display: block;
+        font-size: var(--smaller-font-size);
+        color: var(--text-black-700);
+    }
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}

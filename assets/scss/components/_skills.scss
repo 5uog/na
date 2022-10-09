@@ -1,0 +1,150 @@
+/*===== about (skills) =====*/
+.skills {
+    &-container {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        row-gap: 0;
+    }
+
+    &-header {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        border-radius: 15px;
+        margin-bottom: var(--mb-2-5);
+        background-color: var(--bg-black-100);
+        border: 1px solid var(--bg-black-50);
+    }
+
+    &-icon, &-arrow {
+        color: var(--text-black-900);
+        font-size: 2rem;
+    }
+
+    &-icon {
+        margin-right: var(--mb-0-75);
+    }
+
+    &-titles {
+        font-size: var(--h3-font-size);
+        color: var(--text-black-900);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-subtitle {
+        font-size: var(--small-font-size);
+        color: var(--text-black-700);
+    }
+
+    &-arrow {
+        margin-left: auto;
+        transition: .4s;
+    }
+
+    &-close {
+
+        & .skills-list {
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+    &-open {
+
+        & .skills-list {
+            height: max-content;
+            margin-bottom: var(--mb-2-5);
+        }
+
+        & .skills-arrow {
+            transform: rotate(-180deg);
+        }
+    }
+
+    &-list {
+        row-gap: 1.5rem;
+        padding-left: 2.7rem;
+        padding-right: 0.7rem;
+    }
+
+    &-name {
+        color: var(--text-black-900);
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+    }
+
+    &-number {
+        color: var(--text-black-700);
+    }
+
+    &-bar {
+        height: 5px;
+        border-radius: .25rem;
+        background-color: var(--bg-black-100);
+        border: 1px solid var(--bg-black-50);
+    }
+
+    &-percentage {
+        height: 5px;
+        border-radius: .25rem;
+        display: block;
+        background-color: var(--text-black-700);
+    }
+
+    &-apex {
+        width: 5%;
+    }
+
+    &-mc {
+        width: 15%;
+    }
+
+    &-html, &-motion, &-valorant, &-gentou {
+        width: 25%;
+    }
+
+    &-swift, &-qt, &-unity, &-proseka {
+        width: 30%;
+    }
+
+    &-php {
+        width: 35%;
+    }
+
+    &-scss, &-firebase, &-sketch, &-sky {
+        width: 45%;
+    }
+
+    &-react, &-ps {
+        width: 55%;
+    }
+
+    &-sql, &-live2d {
+        width: 60%;
+    }
+
+    &-python, &-fcpx, &-osu {
+        width: 65%;
+    }
+
+    &-cpp, &-ae, &-iv {
+        width: 75%;
+    }
+
+    &-mcpe {
+        width: 85%;
+    }
+
+    &-csharp, &-blender {
+        width: 90%;
+    }
+
+    &-vs, &-genshin {
+        width: 95%;
+    }
+
+    &-number {
+        font-size: var(--small-font-size);
+    }
+}
