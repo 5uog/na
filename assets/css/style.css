@@ -539,6 +539,11 @@ body.light {
 }
   
 @media screen and (min-width: 767px) {
+    .grid-projects {
+        display: grid;
+        gap: 1.25rem;
+    }
+
     .projects-content{
         grid-template-columns: repeat(2, 332px);
     }
