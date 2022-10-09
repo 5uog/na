@@ -439,6 +439,9 @@ body.light {
     font-size: var(--small-font-size);
 }
 
+/*===== clans =====*/
+
+
 /*===== projects =====*/
 .projects-content {
     padding-left: auto;
@@ -515,6 +518,11 @@ body.light {
         flex-direction: column;
     }
 
+    .clans-img {
+        width: 200px;
+        justify-self: center;
+    }
+
     .projects-content {
         justify-content: center;
         padding-left: 1rem;
@@ -527,6 +535,19 @@ body.light {
     .skills-container {
         padding-left: 4rem;
         padding-right: 4rem;
+    }
+    
+    .clans-container {
+        width: 400px;
+        overflow: hidden;
+    }
+
+    .clans-container .swiper-button-prev {
+        left: 1rem;
+    }
+
+    .clans-container .swiper-button-next {
+        right: 1rem;
     }
     
     .projects-content{
@@ -542,6 +563,10 @@ body.light {
     .grid-projects {
         display: grid;
         gap: 1.25rem;
+    }
+
+    .clans-container {
+        width: 500px;
     }
 
     .projects-content{
@@ -583,6 +608,32 @@ body.light {
 }
 
 @media screen and (min-width: 1024px) {
+    .clans-container {
+        width: 900px;
+    }
+
+    .clans-container .swiper-button-prev,
+    .clans-container .swiper-button-next {
+        font-size: 3rem;
+    }
+
+    .clans-container .swiper-button-prev {
+        left: -1rem;
+    }
+
+    .clans-container .swiper-button-next {
+        right: -1rem;
+    }
+
+    .clans-container .swiper-slide {
+        margin-bottom: 6.5rem;
+    }
+
+    .clans-img {
+        width: 320px;
+        margin-bottom: 2rem;
+    }
+
     .scrollup {
         right: 2rem;
     }
