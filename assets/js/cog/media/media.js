@@ -209,7 +209,7 @@ for (let i = 0; i < allMusic.length; i++) {
     <div class="row">
     <span>${allMusic[i].name}</span>
     </div>
-    <span id="${allMusic[i].src}" class="audio-duration">3:40</span>
+    <span id="${allMusic[i].src}" class="audio-duration"></span>
     <audio class="${allMusic[i].src}" src="./assets/audio/${allMusic[i].src}.mp3"></audio>
     </li>`;
     
