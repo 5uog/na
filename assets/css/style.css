@@ -498,12 +498,6 @@ body.light {
     bottom: 3rem;
 }
 
-#my-scrollbar {
-    width: 500px;
-    height: 500px;
-    overflow: auto;
-}
-
 /*===== footer =====*/
 .footer__c {
     display: block;
