@@ -263,6 +263,7 @@ body.light {
   padding: 0.25rem;
   display: flex;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .scroll-down {
@@ -584,4 +585,4 @@ body.light {
   .scrollup {
     right: 2rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=style.css.map */
