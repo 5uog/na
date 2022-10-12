@@ -161,14 +161,13 @@
     width: 200px;
     right: 0;
     left: 0;
-    bottom: -20px;
     opacity: 0;
+    bottom: 0;
     pointer-events: none;
     z-index: 5;
     padding: 14px;
     border-radius: 15px;
     overflow: hidden;
-    transition: none;
 }
 
 .music-list.show {
@@ -183,12 +182,14 @@
 }
 
 .music-list ul {
+    color: var(--text-black-900);
     margin: 10px 0;
     max-height: 260px;
     overflow: auto;
 }
 
 .music-list ul::-webkit-scrollbar {
+    color: var(--text-black-900);
     width: 0px;
 }
 
@@ -208,6 +209,7 @@
 
 .music-list ul li .row span {
     font-size: 15px;
+    color: var(--text-black-900);
 }
 
 .music-list ul li .row p {
@@ -216,9 +218,10 @@
 
 ul li .audio-duration {
     font-size: 15px;
+    color: var(--text-black-900);
 }
 
 ul li .playing {
     pointer-events: none;
-    color: var(--text-black-700);
+    color: var(--text-black-900);
 }

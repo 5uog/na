@@ -14,20 +14,26 @@ const wrapper = document.querySelector(".wrapper"),
       
 let allMusic = [
     {
-        name: "HBD BRO!",
-        artist: "Nate Cano",
+        name: "recluse",
+        artist: "yves",
         img: "music-1",
         src: "music-1"
     },
     {
-        name: "alone",
-        artist: "shar'bit",
+        name: "pretty",
+        artist: "snowee",
         img: "music-2",
         src: "music-2"
     },
     {
-        name: "It G Ma",
-        artist: "Keith Ape",
+        name: "alone",
+        artist: "shar'bit",
+        img: "music-3",
+        src: "music-3"
+    },
+    {
+        name: "Bryanex",
+        artist: "Brothel",
         img: "music-4",
         src: "music-4"
     },
@@ -38,8 +44,8 @@ let allMusic = [
         src: "music-5"
     },
     {
-        name: "over the dirty world",
-        artist: "leino",
+        name: "私は死にたい。",
+        artist: "ghcsts",
         img: "music-6",
         src: "music-6"
     },

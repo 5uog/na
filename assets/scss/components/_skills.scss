@@ -43,7 +43,6 @@
     }
 
     &-close {
-
         & .skills-list {
             height: 0;
             overflow: hidden;
@@ -51,7 +50,6 @@
     }
 
     &-open {
-
         & .skills-list {
             height: max-content;
             margin-bottom: var(--mb-2-5);

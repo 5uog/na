@@ -37,7 +37,6 @@
     border: 1px solid var(--bg-black-50);
     margin-right: 25px;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .cog .s-icon i {
