@@ -23,7 +23,19 @@
             transition: all 0.3s ease;
 
             &.active {
+                position: relative;
                 color: var(--main-color);
+            }
+
+            &.active::before {
+                content: '';
+                position: absolute;
+                bottom: -.75rem;
+                left: 45%;
+                width: 5px;
+                height: 5px;
+                background-color: var(--main-color);
+                border-radius: 50%;
             }
         }
     }
